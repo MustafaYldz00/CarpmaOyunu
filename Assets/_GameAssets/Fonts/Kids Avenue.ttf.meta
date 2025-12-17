@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1fb0731ceb6109749a258efdb2285d2a
+guid: 545e80bea9fec0b49a3cd9c78a3bfbae
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,8 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: 00327
   fontNames:
-  - 00327
+  - Kids Avenue
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

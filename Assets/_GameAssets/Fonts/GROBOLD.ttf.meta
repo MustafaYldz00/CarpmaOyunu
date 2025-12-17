@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0c37df35fc9630543869e579421d7479
+guid: 8765ac321d464ba4492ec57d67d8ba3c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,8 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Junegull
   fontNames:
-  - Junegull
+  - GROBOLD
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
