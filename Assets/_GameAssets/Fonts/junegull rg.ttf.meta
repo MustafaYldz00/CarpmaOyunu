@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 545e80bea9fec0b49a3cd9c78a3bfbae
+guid: b81b77a9f1e0bea4097a0af8035af169
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Kids Avenue
+  - Junegull
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
