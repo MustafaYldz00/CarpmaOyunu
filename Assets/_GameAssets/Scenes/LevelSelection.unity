@@ -337,7 +337,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 63260228}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153216442}
+        m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
+        m_MethodName: WhichGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "5 ile \xC7arpma"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &63260228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,7 +693,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 170493743}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153216442}
+        m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
+        m_MethodName: WhichGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "7 ile \xC7arpma"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &170493743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,7 +826,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 181123902}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153216442}
+        m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
+        m_MethodName: WhichGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "6 ile \xC7arpma"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &181123902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,7 +959,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 213468900}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153216442}
+        m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
+        m_MethodName: WhichGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "10 ile \xC7arpma"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &213468900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1180,7 +1228,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 225994204}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153216442}
+        m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
+        m_MethodName: WhichGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "9 ile \xC7arpma"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &225994204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1437,7 +1497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 692858174}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153216442}
+        m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
+        m_MethodName: WhichGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "3 ile \xC7arpma"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &692858174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2666,7 +2738,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1433409886}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153216442}
+        m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
+        m_MethodName: WhichGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0130ki ile \xC7arpma"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1433409886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3056,7 +3140,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1485843576}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153216442}
+        m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
+        m_MethodName: WhichGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "4 ile \xC7arpma"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1485843576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3252,7 +3348,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1772528480}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153216442}
+        m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
+        m_MethodName: WhichGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "8 ile \xC7arpma"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1772528480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3373,7 +3481,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1891032714}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 153216442}
+        m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
+        m_MethodName: WhichGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Kar\u0131\u015F\u0131k \xC7arpma"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1891032714
 MonoBehaviour:
   m_ObjectHideFlags: 0
