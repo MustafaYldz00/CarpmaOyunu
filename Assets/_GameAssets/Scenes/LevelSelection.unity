@@ -347,7 +347,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "5 ile \xC7arpma"
+          m_StringArgument: 5
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &63260228
@@ -703,7 +703,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "7 ile \xC7arpma"
+          m_StringArgument: 7
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &170493743
@@ -836,7 +836,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "6 ile \xC7arpma"
+          m_StringArgument: 6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &181123902
@@ -969,7 +969,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "10 ile \xC7arpma"
+          m_StringArgument: 10
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &213468900
@@ -1238,7 +1238,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "9 ile \xC7arpma"
+          m_StringArgument: 9
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &225994204
@@ -1507,7 +1507,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "3 ile \xC7arpma"
+          m_StringArgument: 3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &692858174
@@ -2748,7 +2748,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u0130ki ile \xC7arpma"
+          m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1433409886
@@ -3150,7 +3150,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "4 ile \xC7arpma"
+          m_StringArgument: 4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1485843576
@@ -3358,7 +3358,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "8 ile \xC7arpma"
+          m_StringArgument: 8
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1772528480
@@ -3491,7 +3491,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "Kar\u0131\u015F\u0131k \xC7arpma"
+          m_StringArgument: "Kar\u0131\u015F\u0131k"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1891032714

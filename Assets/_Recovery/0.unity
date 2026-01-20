@@ -1925,7 +1925,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 99x99
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aad4bfac9be645545894559c5b7c06bb, type: 2}
   m_sharedMaterial: {fileID: 3695656757850418460, guid: aad4bfac9be645545894559c5b7c06bb, type: 2}
@@ -3074,8 +3074,8 @@ MonoBehaviour:
   _solSonuc: {fileID: 914207957}
   _ortaSonuc: {fileID: 1899808259}
   _sagSonuc: {fileID: 1993284345}
-  _dogruSayiText: {fileID: 2077782835}
-  _yanlisSayiText: {fileID: 823704892}
+  _dogruSayi: {fileID: 2077782835}
+  _yanlisSayi: {fileID: 823704892}
   _puanText: {fileID: 29638475}
 --- !u!1 &1865567186
 GameObject:
@@ -3225,7 +3225,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' '
+  m_text: 99x99
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aad4bfac9be645545894559c5b7c06bb, type: 2}
   m_sharedMaterial: {fileID: 3695656757850418460, guid: aad4bfac9be645545894559c5b7c06bb, type: 2}
@@ -3361,7 +3361,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' '
+  m_text: 99x99
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aad4bfac9be645545894559c5b7c06bb, type: 2}
   m_sharedMaterial: {fileID: 3695656757850418460, guid: aad4bfac9be645545894559c5b7c06bb, type: 2}
