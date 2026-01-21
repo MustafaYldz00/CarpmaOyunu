@@ -14,6 +14,6 @@ public class Bullet : MonoBehaviour
     
     void Update()
     {
-        transform.Translate(Vector3.up * Time.deltaTime * _bulletSpeed);    
+        transform.Translate(Vector3.up * Time.deltaTime * _bulletSpeed);
     }
 }

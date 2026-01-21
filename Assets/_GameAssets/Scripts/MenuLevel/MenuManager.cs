@@ -14,16 +14,18 @@ public class MenuManager : MonoBehaviour
 
     public void moveNextLevel()
     {
+        AudioManager.Instance.Play(SoundType.ButtonClickSound);
         SceneManager.LoadScene(1);
     }
 
     public void SettingsPanel()
     {
-
+        AudioManager.Instance.Play(SoundType.ButtonClickSound);
     }
 
     public void exitGame()
     {
         Application.Quit();
+        AudioManager.Instance.Play(SoundType.ButtonClickSound);
     }
 }

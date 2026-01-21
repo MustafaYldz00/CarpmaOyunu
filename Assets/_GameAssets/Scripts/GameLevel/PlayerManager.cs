@@ -29,7 +29,7 @@ public class PlayerManager : MonoBehaviour
         Vector2 direction = Camera.main.ScreenToWorldPoint(mousePos) - _gun.position;
         _angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
 
-        if(_angle<45 && _angle > -45)
+        if(_angle<40 && _angle > -40)
         {
             Quaternion rotation = Quaternion.AngleAxis(_angle, Vector3.forward);
 
@@ -38,10 +38,10 @@ public class PlayerManager : MonoBehaviour
         
             if (Input.GetMouseButtonDown(0) && Time.time > _lastFireTime + _fireDelay)
             {
-            _gun.rotation = rotation;
-
-            fireBullet();
-            _lastFireTime = Time.time;
+                _gun.rotation = rotation;
+                AudioManager.Instance.Play(SoundType.FireSound);
+                fireBullet();
+                _lastFireTime = Time.time;
             }
         }
     }
@@ -49,6 +49,5 @@ public class PlayerManager : MonoBehaviour
     public void fireBullet()
     {
         GameObject bullet = Instantiate(_bulletPrefab[Random.Range(0, _bulletPrefab.Length)], _bulletTransform.position, _bulletTransform.rotation) as GameObject;
-        
     }
 }

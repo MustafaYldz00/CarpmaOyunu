@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,13 +17,25 @@ public class SubMenuManager : MonoBehaviour
 
     public void WhichGame(string gameLevelName)
     {
+        AudioManager.Instance.Play(SoundType.ButtonClickSound);
         PlayerPrefs.SetString("gameLevelName", gameLevelName);
+        StartCoroutine(LoadSceneWithDelay());
+    }
+
+    private IEnumerator LoadSceneWithDelay()
+    {
+        yield return new WaitForSeconds(0.1f);
         SceneManager.LoadScene(2);
     }
 
-
     public void backButton()
     {
+        AudioManager.Instance.Play(SoundType.ButtonClickSound);
+        StartCoroutine(LoadBackScene());
+    }
+    private IEnumerator LoadBackScene()
+    {
+        yield return new WaitForSeconds(0.1f);
         SceneManager.LoadScene(0);
     }
 }

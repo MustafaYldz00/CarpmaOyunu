@@ -14,6 +14,9 @@ public class GameLevelManager : MonoBehaviour
     [SerializeField] private TMP_Text _dogruSayiText;
     [SerializeField] private TMP_Text _yanlisSayiText;
     [SerializeField] private TMP_Text _puanText;
+    [SerializeField] private GameObject _dogruImage;
+    [SerializeField] private GameObject _yanlisImage;
+
 
     private string _gameLevelName;
 
@@ -141,8 +144,9 @@ public class GameLevelManager : MonoBehaviour
             _dogruSayisi++;
             _dogruSayiText.text = _dogruSayisi.ToString() + " DOÐRU";
             _Puan += 10;
-            _puanText.text = _Puan.ToString();
-            SoruyuYazdir();
+            _puanText.text = _Puan.ToString()+ " PUAN";
+            StartCoroutine(TrueFalseImageAktiflik(_dogruImage));
+            AudioManager.Instance.Play(SoundType.TrueSound);
         }
         else
         {
@@ -150,9 +154,18 @@ public class GameLevelManager : MonoBehaviour
             _yanlisSayisi++;
             _yanlisSayiText.text = _yanlisSayisi.ToString() + " YANLIÞ";
             _Puan -= 5;
-            _puanText.text = _Puan.ToString();
-            SoruyuYazdir();
+            _puanText.text = _Puan.ToString()+ " PUAN";
+            StartCoroutine(TrueFalseImageAktiflik(_yanlisImage));
+            AudioManager.Instance.Play(SoundType.FalseSound);
         }
+    }
+
+    IEnumerator TrueFalseImageAktiflik(GameObject image)
+    {
+        image.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        image.SetActive(false);
+        SoruyuYazdir();
     }
 
 }
