@@ -24,8 +24,13 @@ public class GameLevelManager : MonoBehaviour
     int _ikinciCarpan;
     int Sonuc;
     int _yanlisSayisi, _dogruSayisi, _Puan;
+
     void Start()
     {
+        if (Time.timeScale != 1)
+        {
+            Time.timeScale = 1;
+        }
         if (PlayerPrefs.HasKey("gameLevelName"))
         {
             _gameLevelName = PlayerPrefs.GetString("gameLevelName");
@@ -38,15 +43,14 @@ public class GameLevelManager : MonoBehaviour
     IEnumerator StartTextRoutine()
     {
         _startText.GetComponent<RectTransform>().DOScale(1f, 0.1f);
-        yield return new WaitForSeconds(0.5f);
-        _startText.GetComponent<RectTransform>().DOScale(0f, 0.5f).SetEase(Ease.InBack);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.35f);
+        _startText.GetComponent<RectTransform>().DOScale(0f, 0.3f).SetEase(Ease.InBack);
+        yield return new WaitForSeconds(0.35f);
         StartGame();
     }
 
     public void StartGame()
     {
-        Debug.Log(_gameLevelName + " Seviyesi Açýldý");
         SoruyuYazdir();
     }
 
@@ -85,7 +89,7 @@ public class GameLevelManager : MonoBehaviour
                 _birinciCarpan = Random.Range(2, 11);
                 break;
         }
-        Debug.Log(_birinciCarpan);
+        
 
     }
 
@@ -140,23 +144,27 @@ public class GameLevelManager : MonoBehaviour
     {
         if (textSonucu == Sonuc)
         {
-            Debug.Log("Doðru");
             _dogruSayisi++;
             _dogruSayiText.text = _dogruSayisi.ToString() + " DOÐRU";
             _Puan += 10;
             _puanText.text = _Puan.ToString()+ " PUAN";
             StartCoroutine(TrueFalseImageAktiflik(_dogruImage));
-            AudioManager.Instance.Play(SoundType.TrueSound);
+            if (PlayerPrefs.GetInt("sesDurumu") == 1)
+            {
+                AudioManager.Instance.Play(SoundType.TrueSound);
+            }
         }
         else
         {
-            Debug.Log("Yanlýþ");
             _yanlisSayisi++;
             _yanlisSayiText.text = _yanlisSayisi.ToString() + " YANLIÞ";
             _Puan -= 5;
             _puanText.text = _Puan.ToString()+ " PUAN";
             StartCoroutine(TrueFalseImageAktiflik(_yanlisImage));
-            AudioManager.Instance.Play(SoundType.FalseSound);
+            if (PlayerPrefs.GetInt("sesDurumu") == 1)
+            {
+                AudioManager.Instance.Play(SoundType.FalseSound);
+            }
         }
     }
 
@@ -168,4 +176,5 @@ public class GameLevelManager : MonoBehaviour
         SoruyuYazdir();
     }
 
+   
 }

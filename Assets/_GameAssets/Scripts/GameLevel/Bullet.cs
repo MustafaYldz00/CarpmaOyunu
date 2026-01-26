@@ -14,6 +14,9 @@ public class Bullet : MonoBehaviour
     
     void Update()
     {
+        if (Time.timeScale != 1f)
+        { Time.timeScale = 1f; }
+        
         transform.Translate(Vector3.up * Time.deltaTime * _bulletSpeed);
     }
 }

@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
@@ -11,14 +13,23 @@ public class PlayerManager : MonoBehaviour
     float _speed = 5f;
     float _fireDelay = 1f;
     float _lastFireTime;
+
     void Update()
     {
-        RotateChange();
-
+        if (InputBlocker.IsUIBlockingInput)
+            return;
+        if (Time.timeScale != 1f)
+        {
+            Time.timeScale = 1f;
+            RotateChange();
+        }
+        else
+            RotateChange ();
     }
 
     public void RotateChange()
     {
+        
         Vector3 mousePos = Input.mousePosition;
         if (float.IsInfinity(mousePos.x) || 
             float.IsNaN(mousePos.x) || 
@@ -36,18 +47,33 @@ public class PlayerManager : MonoBehaviour
             _gun.rotation = Quaternion.Slerp(_gun.rotation, rotation, _speed * Time.deltaTime);
 
         
-            if (Input.GetMouseButtonDown(0) && Time.time > _lastFireTime + _fireDelay)
+            if (Input.GetMouseButtonUp(0) 
+                && !IsInDeadZone()
+                && Time.time > _lastFireTime + _fireDelay)
             {
+                
                 _gun.rotation = rotation;
-                AudioManager.Instance.Play(SoundType.FireSound);
+                if (PlayerPrefs.GetInt("sesDurumu") == 1)
+                {
+                    AudioManager.Instance.Play(SoundType.FireSound);
+                }
                 fireBullet();
                 _lastFireTime = Time.time;
             }
         }
     }
+    bool IsInDeadZone()
+    {
+        return Input.mousePosition.y > Screen.height * 0.675f;
+    }
 
     public void fireBullet()
     {
-        GameObject bullet = Instantiate(_bulletPrefab[Random.Range(0, _bulletPrefab.Length)], _bulletTransform.position, _bulletTransform.rotation) as GameObject;
+        if (!InputBlocker.IsUIBlockingInput)
+        {
+            GameObject bullet = Instantiate(_bulletPrefab[Random.Range(0, _bulletPrefab.Length)], _bulletTransform.position, _bulletTransform.rotation) as GameObject;
+        }
     }
+   
+    
 }
