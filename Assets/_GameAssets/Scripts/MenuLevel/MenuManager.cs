@@ -64,16 +64,18 @@ public class MenuManager : MonoBehaviour
 
     public void moveNextLevel()
     {
+        AudioManager.Instance.Play(SoundType.ButtonClickSound);
+
         if (Time.timeScale != 1f)
         {
             Time.timeScale = 1f;
 
-            AudioManager.Instance.Play(SoundType.ButtonClickSound);
+            
             SceneManager.LoadScene(1);
         }
         else
         {
-            AudioManager.Instance.Play(SoundType.ButtonClickSound);
+            
             SceneManager.LoadScene(1);
         }
         

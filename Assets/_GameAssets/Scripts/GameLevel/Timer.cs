@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _timerText;
+    public static Timer Instance { get; private set; }
 
-    private int _remainingTime = 12;
-    private bool _running = true;
+    [SerializeField] private TMP_Text _timerText;
+    [SerializeField] GameObject _timeOverPanel;
+
+    public int _remainingTime = 12;
+    public bool _running = true;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -31,10 +39,13 @@ public class Timer : MonoBehaviour
             {
                 _timerText.text = "00";
                 _running = false;
+                _timeOverPanel.SetActive(true);
+                InputBlocker.IsUIBlockingInput = true;
             }
             _remainingTime --;
         }
     }
+
 
    
 }

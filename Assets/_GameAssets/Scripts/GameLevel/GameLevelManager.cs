@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GameLevelManager : MonoBehaviour
 {
+    public static GameLevelManager Instance { get; private set; }
+
     [Header("References")]
     [SerializeField] private GameObject _startText;
     [SerializeField] private TMP_Text _soruText;
@@ -23,7 +25,12 @@ public class GameLevelManager : MonoBehaviour
     int _birinciCarpan;
     int _ikinciCarpan;
     int Sonuc;
-    int _yanlisSayisi, _dogruSayisi, _Puan;
+    public int _yanlisSayisi, _dogruSayisi, _Puan;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
