@@ -3710,7 +3710,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 90
+  m_text: '45
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aad4bfac9be645545894559c5b7c06bb, type: 2}
   m_sharedMaterial: {fileID: 3695656757850418460, guid: aad4bfac9be645545894559c5b7c06bb, type: 2}
@@ -4879,7 +4881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Timer
   _timerText: {fileID: 1067462334}
   _timeOverPanel: {fileID: 1546335563}
-  _remainingTime: 12
+  _remainingTime: 45
   _running: 1
 --- !u!1 &1829302634
 GameObject:
